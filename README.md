@@ -1,4 +1,8 @@
 # grpc-php-plugin-binary
+
+[![Latest Stable Version](https://poser.pugx.org/s1lver/grpc-php-plugin-binary/v/stable.svg)](https://packagist.org/packages/s1lver/grpc-php-plugin-binary)
+[![Total Downloads](http://poser.pugx.org/s1lver/grpc-php-plugin-binary/downloads)](https://packagist.org/packages/s1lver/grpc-php-plugin-binary)
+
 Binary grpc_php_plugin for protoc utils
 
 ## Install
