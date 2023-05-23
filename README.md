@@ -13,6 +13,18 @@ or add
 "s1lver/grpc-php-plugin-binary": "^1.0.0"
 ```
 
+## How to use
+
+```bash
+cp /your_repo/vendor/bin/grpc_php_plugin /usr/local/bin/grpc_php_plugin
+
+protoc -I . \
+       --php_out=your/path \
+       --grpc_out=your/path \
+       --plugin=protoc-gen-grpc=`which grpc_php_plugin` \
+       your/path/proto.proto 
+```
+
 ## How to compile
 
 https://github.com/grpc/grpc/tree/v1.55.0/src/php#grpc_php_plugin-protoc-plugin
