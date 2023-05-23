@@ -1,6 +1,17 @@
 # grpc-php-plugin-binary
-binary grpc_php_plugin for protoc utils
+Binary grpc_php_plugin for protoc utils
 
+## Install
+
+```bash
+composer require s1lver/grpc-php-plugin-binary "^1.0.0"
+```
+
+or add
+
+```
+"s1lver/grpc-php-plugin-binary": "^1.0.0"
+```
 
 ## How to compile
 
