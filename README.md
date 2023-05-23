@@ -45,6 +45,6 @@ make protoc grpc_php_plugin
 
 ## Version matching
 
-| gRPC version | Plugin binary version |
-|--------------|-----------------------|
-| v1.53.0      | 1.0.0                 |
+| gRPC version | Plugin binary version | Architecture |
+|--------------|-----------------------|--------------|
+| v1.53.0      | 1.0.0                 | x86          |
