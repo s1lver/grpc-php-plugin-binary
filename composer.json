@@ -1,0 +1,6 @@
+{
+  "name": "s1lver/grpc-php-plugin-binary",
+  "description": "grpc_php_plugin binary for protoc utils",
+  "license": "BSD-3-Clause",
+  "minimum-stability": "dev"
+}
