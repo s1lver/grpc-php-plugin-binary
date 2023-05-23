@@ -6,7 +6,9 @@ ARG MAKEFLAGS=-j8
 
 WORKDIR /grpc
 
-RUN git clone -b v1.53.0 https://github.com/grpc/grpc . \
+ARG GRPC_VERSION
+
+RUN git clone -b ${GRPC_VERSION} https://github.com/grpc/grpc . \
     && git submodule update --init --recursive
 
 WORKDIR /grpc/cmake/build
