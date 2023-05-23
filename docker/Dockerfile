@@ -1,5 +1,6 @@
 FROM alpine:latest
 
+# Installing the main image packages
 RUN apk add cmake git make g++
 
 ARG MAKEFLAGS=-j8
@@ -13,7 +14,7 @@ RUN git clone -b ${GRPC_VERSION} https://github.com/grpc/grpc . \
 
 WORKDIR /grpc/cmake/build
 
-#RUN cmake ../.. \
-#    && make protoc grpc_php_plugin \
+RUN cmake ../.. \
+    && make protoc grpc_php_plugin \
 
 CMD ["sleep", "infinity"]
