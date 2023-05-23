@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  alpine:
+    container_name: grpc-php-plugin-binary
+    build: ./
+    volumes:
+      - ${ROOT_PATH}:/grpc
+    env_file: .env

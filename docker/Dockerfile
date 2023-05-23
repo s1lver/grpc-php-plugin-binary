@@ -1,12 +1,12 @@
 FROM alpine:latest
 
-RUN apk add cmake
+RUN apk add cmake git
 
 ARG MAKEFLAGS=-j8
 
 WORKDIR /grpc
 
-RUN git clone https://github.com/grpc/grpc . \
+RUN git clone -b v1.53.0 https://github.com/grpc/grpc . \
     && git submodule update --init --recursive
 
 WORKDIR /grpc/cmake/build
